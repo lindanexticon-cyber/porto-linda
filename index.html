@@ -1,177 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Linda Novia Sari - Freelance Portfolio</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #fafafa; color: #333; }
-header { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; }
-header h1 { margin: 0; font-size: 2.2rem; }
-header p { margin: .3rem 0 1rem; }
-nav a { color: #fff; margin: 0 10px; text-decoration: none; }
-section { padding: 2rem; max-width: 900px; margin: auto; }
-h2 { color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
-.card { background: #fff; padding: 1rem; margin: 1rem 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.08); }
-footer { background: #2c3e50; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
-.btn { display: inline-block; padding: 0.6rem 1.2rem; background: #2980b9; color: #fff; border-radius: 5px; text-decoration: none; }
-.btn:hover { background: #1f6390; }
-ul { margin: 0; padding-left: 1.2rem; }
-/* Floating buttons */
-.whatsapp-float, .top-float {
-position: fixed;
-width: 50px;
-height: 50px;
-bottom: 20px;
-right: 20px;
-border-radius: 50%;
-text-align: center;
-font-size: 24px;
-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-z-index: 100;
-transition: transform 0.3s ease;
-}
-.whatsapp-float {
-background-color: #25d366;
-color: #fff;
-}
-.top-float {
-background-color: #2980b9;
-color: #fff;
-bottom: 80px;
-display: none;
-}
-.whatsapp-float:hover, .top-float:hover {
-transform: scale(1.15);
-}
-.whatsapp-float i, .top-float i {
-margin-top: 13px;
-}
-</style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda Novia Sari  - Akuntan Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind = {
+            config: {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            'light-blue': '#E6F3FF',
+                            'navy-blue': '#1E293B',
+                            'medium-blue': '#3B82F6'
+                        }                        
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-<header id="top">
-<h1>Linda Novia Sari</h1>
-<p>Freelance Finance, Accounting & Tax Specialist</p>
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#cases">Case Studies</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
-<a href="https://wa.me/62895637355070" target="_blank" class="btn">Hire Me</a>
-</nav>
-</header>
+<body class="bg-white dark:bg-navy-blue transition-colors duration-300">
+    <!-- Theme Toggle -->
+    <div class="fixed top-6 right-6 z-50">
+        <button id="themeToggle" class="p-3 bg-blue-100 dark:bg-blue-900 w-14 h-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
+            <i id="themeIcon" class="fas fa-cloud text-medium-blue text-xl dark:hidden"></i>
+            <i id="themeMoonIcon" class="fas fa-moon text-yellow-300 text-xl hidden dark:inline"></i>
+        </button>
+    </div>
 
-<section id="about">
-<h2>About Me</h2>
-<p>I am a freelance Finance, Accounting, and Tax Specialist helping SMEs, startups, and retail businesses manage their finances with clarity and compliance. I focus on creating accurate reports, ensuring tax obligations are met, and streamlining processes so owners can save time, cut costs, and make better business decisions. Experienced in handling clients with turnovers up to billions of Rupiah (~USD hundreds of thousands), I bring proven results in efficiency and compliance.</p>
-</section>
+    <!-- Section 1: Hero -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-light-blue dark:from-slate-900 dark:to-navy-blue px-6">
+        <div class="text-center max-w-4xl mx-auto">
+            <!-- Profile Image -->
+            <div class="mb-8">
+                <div class="w-32 h-32 mx-auto w-14 h-14 rounded-full bg-gradient-to-r from-medium-blue to-blue-600 dark:from-blue-400 dark:to-blue-600 flex items-center justify-center shadow-2xl">
+                    <i class="fas fa-calculator text-white text-4xl"></i>
+                </div>
+            </div>
+            
+            <!-- Name -->
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4 tracking-tight">
+                Linda Novia Sari, S.Ak., CTT 
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+                Finance & Accounting Specialist
+            </p>
+            
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/62895637355070" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-md shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-3 min-w-[200px] justify-center">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    WhatsApp
+                </a>
+                <a href="www.linkedin.com/in/linda-novia-sari-b45765219" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-3 min-w-[200px] justify-center">
+                    <i class="fab fa-linkedin text-xl"></i>
+                    LinkedIn
+                </a>
+                <a href="mailto:linda.nexticon@gmail.com" class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-md shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-3 min-w-[200px] justify-center">
+                    <i class="fas fa-envelope text-xl"></i>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
 
-<section id="services">
-<h2>Freelance Services</h2>
-<div class="card">
-<ul>
-<li><strong>Bookkeeping & Monthly Closing</strong> – Accurate monthly financial statements</li>
-<li><strong>Tax Compliance</strong> – PPN, PPh, e-Faktur, e-Bupot, on-time filing</li>
-<li><strong>Cashflow & Budgeting</strong> – Projection & control for better decision making</li>
-<li><strong>System Setup</strong> – Simple accounting systems (Excel, Accurate, Jurnal)</li>
-<li><strong>Etc
-</ul>
-</div>
-</section>
+    <!-- Section 2: Highlights -->
+    <section class="py-20 bg-white dark:bg-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-16">Mengapa Memilih Saya?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-slate-700 dark:to-slate-600 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-medium-blue dark:bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">10+ Klien Puas</h3>
+                </div>
+                
+                <div class="text-center p-8 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-slate-700 dark:to-slate-600 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-medium-blue dark:bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">5+ Financial Reporting & Analysis Projects</h3>
+                </div>
+                
+                <div class="text-center p-8 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-slate-700 dark:to-slate-600 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-medium-blue dark:bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">2 Tahun Pengalaman</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Section 3: Layanan -->
+    <section class="py-20 bg-gray-50 dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-16">Layanan Profesional</h2>
+           <div class="container mx-auto">
+        <!-- First 3 items in a row -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center justify-items-center mb-8">
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-chart-line text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-4">Penyusunan & Analisis Laporan Keuangan</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">Penyusunan laporan keuangan yang akurat dan sesuai standar akuntansi, lengkap dengan analisis untuk memberikan gambaran menyeluruh mengenai kondisi keuangan perusahaan.</p>                   
+            </div>
+            
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-file-invoice-dollar text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-4">Pengelolaan Anggaran & Cash Flow</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">Membantu perusahaan dalam menyusun anggaran, melakukan monitoring arus kas, serta memastikan efisiensi penggunaan dana untuk mendukung stabilitas bisnis.</p>                   
+            </div>
+            
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-lightbulb text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-4">Perpajakan & Pelaporan Keuangan</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">Menangani administrasi dan pencatatan pajak perusahaan, mulai dari perhitungan hingga pelaporan, dengan tujuan meminimalisir risiko kesalahan serta mendukung kepatuhan terhadap regulasi yang berlaku.</p>                   
+            </div>
+        </div>
+        
+        <!-- Last 2 items centered -->
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 max-w-sm">
+                <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-search-dollar text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-4">Layanan Custom</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">Memberikan dukungan sesuai kebutuhan spesifik klien, seperti penyesuaian format laporan, pengembangan sistem pencatatan keuangan, atau konsultasi terkait strategi finansial tertentu.</p>                    
+            </div>
+            
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 max-w-sm">
+                <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-graduation-cap text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-4">Pelatihan & Workshop</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">Pelatihan akuntansi dan keuangan untuk meningkatkan kapasitas tim Anda.</p>                    
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
 
-<section id="cases">
-<h2>Clients & Case Studies</h2>
-<div class="card">
-<h3>Retail Client </h3>
-<ul>
-<li>Prepared complete monthly financial reports (P&L, Balance Sheet, Cashflow)</li>
-<li>Set up recording & stock control system → reduced inventory discrepancies</li>
-<li>Managed monthly tax filings (PPN, PPh) with 100% compliance</li>
-<li>Helped owner gain clear visibility of cashflow & profit per branch</li>
-</ul>
-</div>
-<div class="card">
-<h3>F&B Client – Hospitality Business</h3>
-<ul>
-<li>Handled finance & tax for F&B client with turnover up to IDR 4.8B (~USD 300K)</li>
-<li>Improved tax efficiency by up to 70% through better structuring</li>
-<li>Simplified recording system → cut admin workload by 40%</li>
-</ul>
-</div>
-<div class="card">
-<h3>SME Client – Social Enterprise</h3>
-<ul>
-<li>Set up first bookkeeping system (Excel → Accurate)</li>
-<li>Designed simple financial reports for owner decision-making</li>
-<li>Provided training for staff to ensure sustainability</li>
-</ul>
-</div>
-</section>
+    <!-- Section 4: Portfolio -->
+    <section class="py-20 bg-white dark:bg-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-16">Portfolio & Pencapaian</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-700 h-48 flex items-center justify-center">
+                        <i class="fas fa-building text-white text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-slate-700">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Efisiensi Proses Keuangan</h3>
+                        <!-- <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Perusahaan Manufaktur</p> -->
+                        <p class="text-gray-700 dark:text-gray-300">Berhasil meningkatkan efisiensi pencatatan transaksi harian dan bulanan dengan sistem baru, sehingga waktu kerja tim berkurang hingga 40%.</p>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-gradient-to-br from-green-500 to-green-700 h-48 flex items-center justify-center">
+                        <i class="fas fa-store text-white text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-slate-700">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Optimalisasi Strategi Pajak</h3>
+                        <!-- <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Bisnis Ritel</p> -->
+                        <p class="text-gray-700 dark:text-gray-300">Melakukan optimalisasi pencatatan dan perencanaan pajak (PB1) yang berhasil menurunkan beban pajak klien menjadi ±70%.</p>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-700 h-48 flex items-center justify-center">
+                        <i class="fas fa-rocket text-white text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-slate-700">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Pengelolaan Multi-Entitas</h3>
+                        <!-- <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Startup Technology</p> -->
+                        <p class="text-gray-700 dark:text-gray-300">Mendukung proses keuangan dan perpajakan untuk beberapa klien lintas industri, termasuk holding dan anak perusahaan dengan struktur transaksi yang kompleks.</p>
+                    </div>
+                </div>
+                
+                <!-- <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-gradient-to-br from-red-500 to-red-700 h-48 flex items-center justify-center">
+                        <i class="fas fa-utensils text-white text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-slate-700">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Resto Chain "Nusantara"</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Food & Beverage</p>
+                        <p class="text-gray-700 dark:text-gray-300">Setup sistem akuntansi multi-outlet dan analisis profitabilitas per cabang untuk 25 lokasi.</p>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-gradient-to-br from-yellow-500 to-yellow-700 h-48 flex items-center justify-center">
+                        <i class="fas fa-hard-hat text-white text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-slate-700">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">PT. Konstruksi Prima</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Konstruksi & Engineering</p>
+                        <p class="text-gray-700 dark:text-gray-300">Audit internal dan perbaikan sistem pengendalian untuk proyek infrastruktur senilai Rp 50 miliar.</p>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="bg-gradient-to-br from-indigo-500 to-indigo-700 h-48 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-slate-700">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Workshop & Sertifikasi</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Training & Development</p>
+                        <p class="text-gray-700 dark:text-gray-300">Telah melatih 1000+ profesional keuangan melalui workshop dan sertifikasi akuntansi praktis.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
-<section id="certifications">
-<h2>Certifications</h2>
-<div class="card">
-<ul>
-<li>Brevet AB & Certified Tax Technician</li>
-<li>Junior Accounting Technician (BNSP, 2023)</li>
-<li>Auditor & Financial Analyst (Harisenin, 2023)</li>
-<li>Excel for Finance (Advanced)</li>
-<li>Professional Certificate – EnglishScore</li>
-<li>Primary Chinese – Confucius Institute</li>
-</ul>
-</div>
-</section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-slate-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-4">Mari Berkolaborasi</h3>
+            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                Siap membantu mengoptimalkan keuangan bisnis Anda dengan solusi yang tepat dan profesional.
+            </p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="https://wa.me/62895637355070" class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/linda-novia-sari-b45765219" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="mailto:linda.nexticon@gmail.com" class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm">
+                © 2025 Linda Novia Sari | Finance & Accounting Specialist
+            </p>
+        </div>
+    </footer>
 
-<section id="contact">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:lindaanoviaasr@gmail.com">lindaanoviaasr@gmail.com</a></p>
-<p>Phone/WhatsApp: 0895637355070</p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/lindanoviasari" target="_blank">linkedin.com/in/lindanoviasari</a></p>
-<p><a href="CV-Linda.pdf" class="btn">Download CV</a></p>
-</section>
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeMoonIcon = document.getElementById('themeMoonIcon');
+        const htmlElement = document.documentElement;
 
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            htmlElement.classList.add('dark');
+        }
 
-<footer>
-<p>&copy; 2025 Linda Novia Sari. All rights reserved.</p>
-</footer>
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
 
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/62895637355070" class="whatsapp-float" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
-<!-- Back to Top Button -->
-<a href="#top" class="top-float" id="backToTop">
-<i class="fas fa-arrow-up"></i>
-</a>
-
-<script>
-const backToTop = document.getElementById('backToTop');
-window.onscroll = function() {
-if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-backToTop.style.display = "block";
-} else {
-backToTop.style.display = "none";
-}
-};
-</script>
+        // Observe all sections for scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section > div');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-  
